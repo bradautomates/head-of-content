@@ -1,0 +1,51 @@
+# Environment variables (contains secrets)
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+.egg-info/
+dist/
+build/
+
+# OS files
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Research outputs (timestamped run data)
+x-research/*/
+instagram-research/*/
+youtube-research/*/
+tiktok-research/*/
+content-plans/*/
+
+
+# Reference images (personal photos)
+.claude/context/reference_images/
+
+# MediaPipe model files (auto-downloaded)
+*.task
+
+# Downloaded/temp video files
+*.mp4
+*.mov
+*.avi
+*.webm
+temp/
+tmp/
