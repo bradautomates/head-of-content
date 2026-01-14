@@ -73,6 +73,12 @@ This repository requires 3 API keys.
 
 Apify powers the social media scraping for X, Instagram, and TikTok.
 
+**Actors used:**
+- [Tweet Scraper V2](https://apify.com/apidojo/tweet-scraper) - X/Twitter posts and profiles
+- [Instagram Scraper](https://apify.com/apify/instagram-scraper) - Instagram posts and reels
+- [TikTok Scraper](https://apify.com/clockworks/tiktok-scraper) - TikTok videos and profiles
+
+**Setup:**
 1. Go to [console.apify.com](https://console.apify.com/)
 2. Click **Sign Up** (A paid subscription is required for the X scraper to function as expected)
 3. After signing in, go to **Settings** > **Integrations**
@@ -84,6 +90,11 @@ Apify powers the social media scraping for X, Instagram, and TikTok.
 
 TubeLab provides YouTube outlier detection and video intelligence.
 
+**APIs used:**
+- [Outliers API](https://tubelab.net/docs/api/reference/search-outliers) - Find viral videos in any niche
+- [Transcripts API](https://tubelab.net/docs/api/reference/get-video-transcript) - Get video transcripts
+
+**Setup:**
 1. Go to [tubelab.net](https://tubelab.net/)
 2. Click **Sign Up** and create an account
 3. Go to **Settings** > **API** (or visit [tubelab.net/settings/api](https://tubelab.net/settings/api))
