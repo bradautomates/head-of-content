@@ -6,6 +6,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a Claude Code skills repository for social media content research and marketing automation. It contains skills that research high-performing content across X/Twitter, Instagram, YouTube, and TikTok, then analyze videos with AI to extract replicable hooks and patterns.
 
+## Using Skills
+
+**CRITICAL: When asked to research content on social media:**
+- NEVER use web search, WebFetch, or browse the internet
+- ALWAYS use the appropriate research skill. These skills use specialized APIs that provide better data than web scraping
+- NEVER modify files in `.claude/context/` - these are user-managed configuration files
+
 ## Environment Setup
 
 Required environment variables (configure in `.env`):
@@ -82,3 +89,41 @@ python3 .claude/skills/youtube-research/scripts/find_outliers.py --keywords k1 k
 - **YouTube**: zScore × recency_boost (5%/day decay)
 
 Outlier threshold: engagement rate > mean + (2.0 × std_dev)
+
+## Delegation Mode
+
+When `CLAUDE_DELEGATED=1` environment variable is detected, this project is being invoked from another Claude Code instance (e.g., second-brain).
+
+### Callback Protocol
+
+When the delegator prompt includes "update {task_path}":
+
+1. Execute the requested research skill (per routing rules above)
+2. Update the source task file with status, key findings, and output paths
+3. Use absolute paths when referencing output files
+
+### Output Format for Callback
+
+Update the task file with:
+
+```markdown
+---
+status: complete
+completed: YYYY-MM-DD
+---
+
+## Research Results
+
+### Key Findings
+- [3-5 bullet points summarizing insights]
+
+### Outputs
+- Full report: ~/Documents/GitHub/head-of-content/{platform}-research/{folder}/report.md
+```
+
+### Error Handling
+
+If research partially fails:
+- Set `status: in-progress` instead of `complete`
+- Add a `## Notes` section explaining what succeeded/failed
+- Include paths to any partial outputs generated

@@ -1,6 +1,18 @@
 # Claude Cowork - Head of Content
+> Your AI-powered content research coworker. Stop guessing what content works—let Claude research, analyze, and surface winning patterns across X/Twitter, Instagram, YouTube, and TikTok.
+>
+> Check out this [YouTube video](https://www.youtube.com/@bradbonanno) where we walk through setting up and using Head of Content.
 
-Your AI-powered content research coworker. This Claude CoWork repository automates social media content research across X/Twitter, Instagram, YouTube, and TikTok—identifying high-performing content, analyzing viral patterns with AI, and generating actionable content strategies.
+<img src="images/claude-cowork.png" alt="Head of Content - Claude Cowork" width="800">
+
+A [Claude Cowork](https://docs.anthropic.com/en/docs/claude-code/claude-cowork) skill set that automates social media content research—identifying high-performing content, analyzing viral patterns with AI, and generating actionable content strategies.
+
+## Get Your API Keys
+
+| Service | What It Powers | Sign Up |
+|---------|----------------|---------|
+| **Apify** | X/Twitter, Instagram, TikTok scraping | [Sign up for Apify](https://console.apify.com/?fpr=ih20xe) |
+| **TubeLab** | YouTube outlier detection | [Sign up for TubeLab](https://tubelab.net/?ref=brad) |
 
 ## What This Does
 
@@ -74,12 +86,12 @@ This repository requires 3 API keys.
 Apify powers the social media scraping for X, Instagram, and TikTok.
 
 **Actors used:**
-- [Tweet Scraper V2](https://apify.com/apidojo/tweet-scraper) - X/Twitter posts and profiles
-- [Instagram Scraper](https://apify.com/apify/instagram-scraper) - Instagram posts and reels
-- [TikTok Scraper](https://apify.com/clockworks/tiktok-scraper) - TikTok videos and profiles
+- [Tweet Scraper V2](https://apify.com/apidojo/tweet-scraper?fpr=ih20xe) - X/Twitter posts and profiles
+- [Instagram Scraper](https://apify.com/apify/instagram-scraper?fpr=ih20xe) - Instagram posts and reels
+- [TikTok Scraper](https://apify.com/clockworks/tiktok-scraper?fpr=ih20xe) - TikTok videos and profiles
 
 **Setup:**
-1. Go to [console.apify.com](https://console.apify.com/)
+1. Go to [console.apify.com](https://console.apify.com/?fpr=ih20xe)
 2. Click **Sign Up** (A paid subscription is required for the X scraper to function as expected)
 3. After signing in, go to **Settings** > **Integrations**
 4. Copy your **Personal API Token**
@@ -91,13 +103,13 @@ Apify powers the social media scraping for X, Instagram, and TikTok.
 TubeLab provides YouTube outlier detection and video intelligence.
 
 **APIs used:**
-- [Outliers API](https://tubelab.net/docs/api/reference/search-outliers) - Find viral videos in any niche
-- [Transcripts API](https://tubelab.net/docs/api/reference/get-video-transcript) - Get video transcripts
+- [Outliers API](https://tubelab.net/docs/api/reference/search-outliers?ref=brad) - Find viral videos in any niche
+- [Transcripts API](https://tubelab.net/docs/api/reference/get-video-transcript?ref=brad) - Get video transcripts
 
 **Setup:**
-1. Go to [tubelab.net](https://tubelab.net/)
+1. Go to [tubelab.net](https://tubelab.net/?ref=brad)
 2. Click **Sign Up** and create an account
-3. Go to **Settings** > **API** (or visit [tubelab.net/settings/api](https://tubelab.net/settings/api))
+3. Go to **Settings** > **API** (or visit [tubelab.net/settings/api](https://tubelab.net/settings/api?ref=brad))
 4. Generate and copy your **API Key**
 
 **Cost:** Free tier available. Paid plans start at ~$29/month for higher limits.
@@ -393,11 +405,9 @@ Contributions welcome! To add new skills or improve existing ones:
 
 ---
 
-## Author
+## Implement AI in Your Business
+> Practical AI implementation for real business results
 
-Built by **Brad Bonanno**
+Learn how to implement AI tools and workflows that actually move the needle for your business on my [YouTube channel](https://www.youtube.com/@bradbonanno).
 
-- [YouTube](https://www.youtube.com/@bradbonanno) 
-- [X / Twitter](https://x.com/corpcowboy_)
-
----
+Follow [@corpcowboy_](https://x.com/corpcowboy_) on X
